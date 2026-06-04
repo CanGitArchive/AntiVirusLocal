@@ -1,8 +1,8 @@
 # Changelog
 
-All notable changes to AntiVirusLocal — System Security Check.
+All notable changes to AntiVirusLocal: System Security Check.
 
-## V2.3 — current
+## V2.3: current
 
 - Multi-step uninstall pipeline: normal uninstall → vendor uninstaller (silent
   flags) → ghost-registry cleanup across the three Uninstall hives → leftover
@@ -28,7 +28,7 @@ All notable changes to AntiVirusLocal — System Security Check.
   names and de-duplicates Firefox add-ons across profiles).
 - Active TCP connection scan resolves the owning process name per connection.
 
-## V2.0 — GUI rewrite
+## V2.0: GUI rewrite
 
 - Rewrote the V1.0 command-line script as a **PyQt6 desktop app**. Scans run in
   a background `QThread` and stream results into the UI per section; removal
@@ -36,7 +36,7 @@ All notable changes to AntiVirusLocal — System Security Check.
 - Suspicious rows render red/bold against the `SUSPICIOUS_PATTERNS` /
   `SUSPICIOUS_TASK_PATTERNS` lists.
 
-## V1.0 — initial CLI
+## V1.0: initial CLI
 
 - Command-line script that scanned the system and wrote `security_report.txt`
   for AI-assisted review, with `--delete`, `--kill-task`, and `--delete-folder`

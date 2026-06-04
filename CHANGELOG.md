@@ -1,7 +1,6 @@
 # Changelog
 
 All notable changes to AntiVirusLocal — System Security Check.
-Prior versions are kept as plain snapshots under [`version_control/`](version_control/).
 
 ## V2.3 — current
 

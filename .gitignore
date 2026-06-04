@@ -5,6 +5,9 @@ DATA/
 # Packaged build artifact (regenerate with PyInstaller — see README)
 *.exe
 
+# App-icon raster (the .ico is enough for the build)
+*.png
+
 # Build / packaging
 build/
 dist/

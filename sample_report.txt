@@ -1,0 +1,57 @@
+======================================================================
+  SYSTEM SECURITY CHECK REPORT
+  Generated: 2026-01-01 12:00:00
+  Computer:  DESKTOP-EXAMPLE
+  User:      exampleuser
+======================================================================
+
+  NOTE: This is a SANITIZED SAMPLE report with fabricated data, included
+  to show the export format. Hostnames, IPs (RFC 5737 documentation
+  ranges), and flagged items below are fictional examples — not a real
+  scan of any machine.
+
+── INSTALLED PACKAGES ──
+    7-Zip 24.08 (x64)  |  24.08
+    Google Chrome  |  131.0.0.0
+    Mozilla Firefox 133.0  |  133.0
+    Notepad++ (64-bit)  |  8.7.1
+    VLC media player  |  3.0.21
+⚠️  Honeygain  |  1.0.0
+⚠️  Peer2Profit  |  2.1.4
+
+── RUNNING SERVICES ──
+    Adobe Acrobat Update Service  |  AdobeARMservice  |  Running
+    NVIDIA Display Container LS  |  NVDisplay.ContainerLocalSystem  |  Running
+⚠️  Honeygain Service  |  HoneygainService  |  Running
+
+── SCHEDULED TASKS ──
+    GoogleUpdateTaskMachineCore  |  Google LLC  |  Ready
+⚠️  Peer2ProfitAutoStart  |  Peer2Profit  |  Ready
+
+── STARTUP ITEMS ──
+    Discord  |  C:\Users\exampleuser\AppData\Local\Discord\app.exe  |  HKCU Run
+⚠️  Honeygain  |  C:\Program Files\Honeygain\Honeygain.exe  |  HKCU Run
+
+── ACTIVE CONNECTIONS ──
+    chrome  |  203.0.113.10  |  443
+    firefox  |  203.0.113.45  |  443
+⚠️  Honeygain  |  198.51.100.23  |  443
+⚠️  Honeygain  |  198.51.100.99  |  8080
+
+── CHROME EXTENSIONS ──
+    uBlock Origin  |  cjpalhdlnbpafiamejdnhcphjbkeiagm
+    Bitwarden Password Manager  |  nngceckbapebfimnlniiiahkandclblb
+
+── FIREFOX EXTENSIONS ──
+    uBlock Origin  |  uBlock0@raymondhill.net  |  enabled
+
+── PROXY SETTINGS ──
+ProxyEnable   : 0
+ProxyServer   :
+ProxyOverride :
+AutoConfigURL :
+
+======================================================================
+  Paste this into any AI chat and ask:
+  "Review this security report. Flag anything suspicious."
+======================================================================

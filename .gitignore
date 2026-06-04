@@ -1,0 +1,28 @@
+# Runtime state, exported reports, and any real scan output — never commit.
+# Exports written here contain a real inventory of the local machine.
+DATA/
+
+# Packaged build artifact (regenerate with PyInstaller — see README)
+*.exe
+
+# Build / packaging
+build/
+dist/
+*.spec
+__pycache__/
+*.pyc
+
+# Local tooling and editor config
+.claude/
+*.code-workspace
+.vscode/
+.idea/
+
+# Python environments
+venv/
+.venv/
+env/
+
+# OS noise
+Thumbs.db
+.DS_Store

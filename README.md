@@ -5,6 +5,8 @@ proxyware, PUPs, adware, and crypto miners** running quietly in the background,
 flags the suspects, and lets you remove them. Built after finding a real
 bandwidth-thief app (Infatica P2B) running silently on a machine.
 
+<img width="957" height="702" alt="AV_Main" src="https://github.com/user-attachments/assets/3be8e03b-dd66-4f9e-96e2-d4e5ee1bafda" />
+
 **Tech:** Python 3.12 · PyQt6 · PowerShell · PyInstaller
 
 ## Run

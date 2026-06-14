@@ -1,5 +1,5 @@
 """
-System Security Check — PyQt6 GUI
+System Security Check, PyQt6 GUI
 Run as Administrator for full functionality.
 Scans installed packages, services, scheduled tasks, startup items,
 network connections, browser extensions, and proxy settings.
@@ -97,7 +97,7 @@ def run_ps(command: str, timeout: int = 90) -> str:
         )
         return result.stdout.strip()
     except subprocess.TimeoutExpired:
-        return "[TIMEOUT — command took too long]"
+        return "[TIMEOUT, command took too long]"
     except Exception as e:
         return f"[ERROR: {e}]"
 
@@ -292,7 +292,7 @@ class ActionThread(QThread):
             )
 
             if verify.strip() not in ("0", ""):
-                # Step 2: Normal uninstall failed — try the package's own uninstaller
+                # Step 2: Normal uninstall failed, try the package's own uninstaller
                 run_ps(
                     f'Get-Package -Name "*{self.target}*" | ForEach-Object {{ '
                     f'$u = $_.Meta.Attributes["UninstallString"]; '
@@ -358,7 +358,7 @@ class ActionThread(QThread):
             else:
                 self.result.emit(
                     f"Partially removed: {self.target}. "
-                    f"Try uninstalling from Settings → Apps manually.",
+                    f"Try uninstalling from Settings -> Apps manually.",
                     False,
                 )
 
@@ -367,7 +367,7 @@ class ActionThread(QThread):
             out = run_ps(f'Unregister-ScheduledTask -TaskName "{self.target}" -Confirm:$false')
             if "Access is denied" in out:
                 self.result.emit(
-                    f"Access denied — run as Administrator to remove: {self.target}", False
+                    f"Access denied, run as Administrator to remove: {self.target}", False
                 )
             else:
                 self.result.emit(f"Removed scheduled task: {self.target}", True)
@@ -590,7 +590,7 @@ class MainWindow(QMainWindow):
 
         self.action_input = QLineEdit()
         self.action_input.setPlaceholderText(
-            "Right-click an item → Copy name here, then Uninstall or Kill Task"
+            "Right-click an item -> Copy name here, then Uninstall or Kill Task"
         )
         bottom.addWidget(self.action_input, stretch=1)
 
@@ -612,7 +612,7 @@ class MainWindow(QMainWindow):
 
         # Status bar
         self.setStatusBar(QStatusBar())
-        self.statusBar().showMessage("Ready — click Scan System to begin")
+        self.statusBar().showMessage("Ready, click Scan System to begin")
 
     # ── Scan ────────────────────────────────────────────────────────
     def start_scan(self):
@@ -687,7 +687,7 @@ class MainWindow(QMainWindow):
             self.status_label.setStyleSheet(
                 "font-family: 'Segoe UI', sans-serif; color: #64c878; font-weight: bold; font-size: 14px;"
             )
-            self.status_label.setText(f"✓  Clean — {total} items scanned")
+            self.status_label.setText(f"✓  Clean, {total} items scanned")
             self._log(f"\n✅ Scan complete: {total} items, no threats found.")
         else:
             self.status_label.setStyleSheet(
@@ -710,8 +710,8 @@ class MainWindow(QMainWindow):
                         break
 
         self.statusBar().showMessage(
-            f"Done — {total} items, {flagged} flagged  |  "
-            f"Right-click → Copy to action bar → Uninstall / Kill Task"
+            f"Done, {total} items, {flagged} flagged  |  "
+            f"Right-click -> Copy to action bar -> Uninstall / Kill Task"
         )
 
     # ── Actions ─────────────────────────────────────────────────────
@@ -745,7 +745,7 @@ class MainWindow(QMainWindow):
     def _on_action_result(self, msg: str, success: bool):
         self.uninstall_btn.setEnabled(True)
         self.kill_task_btn.setEnabled(True)
-        self._log(f"  → {msg}")
+        self._log(f"  -> {msg}")
         self.statusBar().showMessage(msg)
         if success:
             QMessageBox.information(self, "Done", msg)

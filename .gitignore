@@ -1,8 +1,8 @@
-# Runtime state, exported reports, and any real scan output — never commit.
+# Runtime state, exported reports, and any real scan output, never commit.
 # Exports written here contain a real inventory of the local machine.
 DATA/
 
-# Packaged build artifact (regenerate with PyInstaller — see README)
+# Packaged build artifact (regenerate with PyInstaller, see README)
 *.exe
 
 # App-icon raster (the .ico is enough for the build)

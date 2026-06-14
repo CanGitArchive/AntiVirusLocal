@@ -7,7 +7,7 @@
 
   NOTE: This is a SANITIZED SAMPLE report with fabricated data, included
   to show the export format. Hostnames, IPs (RFC 5737 documentation
-  ranges), and flagged items below are fictional examples — not a real
+  ranges), and flagged items below are fictional examples, not a real
   scan of any machine.
 
 ── INSTALLED PACKAGES ──

@@ -4,10 +4,10 @@ All notable changes to AntiVirusLocal: System Security Check.
 
 ## V2.3: current
 
-- Multi-step uninstall pipeline: normal uninstall → vendor uninstaller (silent
-  flags) → ghost-registry cleanup across the three Uninstall hives → leftover
-  folder deletion in Program Files / AppData / ProgramData → related scheduled
-  task removal → final verify, with a per-step summary in the result message.
+- Multi-step uninstall pipeline: normal uninstall -> vendor uninstaller (silent
+  flags) -> ghost-registry cleanup across the three Uninstall hives -> leftover
+  folder deletion in Program Files / AppData / ProgramData -> related scheduled
+  task removal -> final verify, with a per-step summary in the result message.
 - Export report jumps the UI to the first flagged tab and lists every flagged
   item in the Log tab.
 - Polished dark theme and per-category tabs (Packages, Services, Tasks, Startup,
